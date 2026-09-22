@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"scripts": [
+		{
+			"resourceName": "the_diamonds_never_die",
+			"label": "The Diamonds Never Die",
+			"description": {
+				"fr": "Au cœur du quartier de Rockford Hills, les diamants brillent sous les projecteurs. L'objectif est simple : vider les vitrines centrales, sans pour autant négliger les angles morts de la sécurité qui regorgent de trésors cachés. Le chrono affiche 90 secondes maximum avant que les sirènes du LSPD ne bouclent le quartier. Une fois les sacs pleins, pas une seconde à perdre : les moteurs tournent déjà dans la ruelle arrière. La fuite s'annonce brutale, pied au plancher à travers le trafic, avec pour seul objectif de semer les patrouilles avant d'atteindre le point de rendez-vous. Une course contre la montre où la moindre erreur de trajectoire sera fatale.",
+				"en": "In the heart of Rockford Hills, diamonds shine under the spotlights. The objective is simple: empty the central display cases, without overlooking the security blind spots that hide their own treasures. The clock gives you 90 seconds tops before the LSPD sirens seal off the neighborhood. Once the bags are full, there's no time to lose: the engines are already running in the back alley. The getaway turns brutal, foot to the floor through traffic, with one goal — lose the patrols before reaching the meeting point. A race against the clock where the smallest wrong turn is fatal.",
+				"es": "En el corazón de Rockford Hills, los diamantes brillan bajo los focos. El objetivo es simple: vaciar las vitrinas centrales, sin descuidar los puntos ciegos de seguridad que esconden sus propios tesoros. El cronómetro marca 90 segundos como máximo antes de que las sirenas de la LSPD sellen el barrio. Una vez llenas las bolsas, no hay ni un segundo que perder: los motores ya están en marcha en el callejón trasero. La huida se vuelve brutal, a fondo entre el tráfico, con un único objetivo — despistar a las patrullas antes de llegar al punto de encuentro. Una carrera contra el reloj donde el más mínimo error de trayectoria es fatal."
+			},
+			"detailBackground": "html/img/courtier-detail-bg.png",
+			"tebexUrl": "https://REMPLACER.tebex.io/"
+		}
+	]
+}
