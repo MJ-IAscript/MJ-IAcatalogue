@@ -1,0 +1,21 @@
+# Garde-fou : ce depot est PUBLIC et ne doit contenir que le catalogue.
+name: guard-catalogue
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Seuls les fichiers autorises sont presents
+        run: |
+          bad=$(git ls-files | grep -vxE 'catalogue\.json|README\.md|\.github/workflows/guard\.yml' || true)
+          if [ -n "$bad" ]; then echo "Fichiers non autorises :"; echo "$bad"; exit 1; fi
+      - name: catalogue.json est un JSON valide
+        run: python3 -c "import json; json.load(open('catalogue.json', encoding='utf-8'))"
+      - name: Aucun motif de cle ou secret
+        run: |
+          if grep -rEn 'sk-ant-[A-Za-z0-9_-]{20,}|sk-[A-Za-z0-9]{32,}|AIza[0-9A-Za-z_-]{30,}|[sr]k_live_[0-9A-Za-z]{16,}|discord(app)?\.com/api/webhooks/' catalogue.json README.md; then
+            echo "Motif de secret detecte"; exit 1
+          fi
