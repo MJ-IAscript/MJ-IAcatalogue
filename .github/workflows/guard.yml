@@ -10,8 +10,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Seuls les fichiers autorises sont presents
         run: |
-          bad=$(git ls-files | grep -vxE 'catalogue\.json|README\.md|\.github/workflows/guard\.yml' || true)
+          bad=$(git ls-files | grep -vxE 'catalogue\.json|README\.md|\.github/workflows/guard\.yml|images/[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp)' || true)
           if [ -n "$bad" ]; then echo "Fichiers non autorises :"; echo "$bad"; exit 1; fi
+      - name: Images legeres (300 Ko maximum)
+        run: |
+          big=$(find images -type f -size +300k 2>/dev/null || true)
+          if [ -n "$big" ]; then echo "Images trop lourdes :"; echo "$big"; exit 1; fi
       - name: catalogue.json est un JSON valide
         run: python3 -c "import json; json.load(open('catalogue.json', encoding='utf-8'))"
       - name: Aucun motif de cle ou secret
