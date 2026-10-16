@@ -43,7 +43,8 @@ nouvelle version) : Discord, Facebook, boutique (noms en dur, toujours affichés
       "label": "The Diamonds Never Die", // ou { "fr": "...", "en": "...", "es": "..." }
       "description": { "fr": "...", "en": "...", "es": "..." }, // ou chaîne simple
       "image": "html/img/xxx.png",            // optionnel, résolu via nui://<resourceName>/... ou https://...
-      "detailBackground": "html/img/xxx.png"  // optionnel, même résolution, SI le script est installé
+      "detailBackground": "html/img/xxx.png", // optionnel, même résolution, SI le script est installé
+      "tebex_label": "mj-ia-pro.tebex.io"     // optionnel : texte « Disponible sur ... » en bas de la fiche d'un script NON installé
     }
   ]
 }
@@ -59,6 +60,15 @@ une table `{fr, en, es}` résolue côté client selon `Config.SubLang` — toujo
 `nui://<resourceName>/<chemin>` — le chemin est relatif à la RACINE de la resource FXServer
 installée chez l'acheteur, pas à ce repo — ou sont pris tels quels s'ils commencent par `https://`.
 Un script non installé reste affichable (label/description) mais sans fond de fiche.
+
+## Script pas encore acheté
+
+Tout script listé dans `scripts` apparaît dans la vitrine, grisé mais cliquable, tant que sa ressource n'est pas démarrée
+chez le joueur (test refait à chaque ouverture de la vitrine : le `resourceName` doit être EXACTEMENT le nom du dossier du
+script). Sa fiche affiche la description puis, en bas, `Disponible sur <tebex_label>`. Le texte est une simple chaîne
+(60 caractères maximum, sans retour à la ligne ni `<` `>`), non cliquable ; sans le champ, c'est le nom de boutique par
+défaut du script (`mj-ia-pro.tebex.io`). Une fois le script acheté, installé et démarré, la carte se dégrise à la
+prochaine ouverture et « Lancer » apparaît (le script doit réagir à l'événement `<resourceName>:courtier:launch`).
 
 ## Photos des actualités
 
