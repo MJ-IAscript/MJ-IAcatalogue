@@ -1,5 +1,13 @@
 {
 	"version": 1,
+	"items": [
+		{
+			"type": "announcement",
+			"title": "Test catalogue",
+			"teaser": "Ceci vient de GitHub.",
+			"expires_at": "2027-01-01T00:00:00Z"
+		}
+	],
 	"discord_link": "https://discord.gg/paTNS9STVa",
 	"facebook_link": "https://www.facebook.com/profile.php?id=61564729864760",
 	"scripts": [
