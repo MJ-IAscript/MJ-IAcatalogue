@@ -1,10 +1,22 @@
 {
 	"version": 1,
+	"news_position": "top",
 	"items": [
 		{
-			"type": "announcement",
-			"title": "Test catalogue",
-			"teaser": "Ceci vient de GitHub.",
+			"type": "upcoming",
+			"size": "large",
+			"title": "Darkcase arrive bientot",
+			"teaser": "Un nouveau braquage, bientot disponible.",
+			"body": "Darkcase est le prochain script de la gamme : un nouveau braquage, de nouvelles missions et un scenario inedit. Reste connecte pour la date de sortie.",
+			"image": "https://raw.githubusercontent.com/MJ-IAscript/MJ-IAcatalogue/brouillon/images/diamant-test.jpg",
+			"media_url": "https://mj-ia-pro.tebex.io/",
+			"expires_at": "2027-01-01T00:00:00Z"
+		},
+		{
+			"type": "update",
+			"title": "Mise a jour 1.2.0",
+			"body": "Nouvelle fuite en bateau, vendeuses et gardes corriges, meilleure compatibilite ESX et QBCore. Le texte complet s'affiche dans la fiche quand on clique sur l'actualite.",
+			"link": "https://mj-ia-pro.tebex.io/",
 			"expires_at": "2027-01-01T00:00:00Z"
 		}
 	],
