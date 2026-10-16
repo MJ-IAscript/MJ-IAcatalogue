@@ -31,6 +31,25 @@
 				"es": "En el corazón de Rockford Hills, los diamantes brillan bajo los focos. El objetivo es simple: vaciar las vitrinas centrales, sin descuidar los puntos ciegos de seguridad que esconden sus propios tesoros. El cronómetro marca 90 segundos como máximo antes de que las sirenas de la LSPD sellen el barrio. Una vez llenas las bolsas, no hay ni un segundo que perder: los motores ya están en marcha en el callejón trasero. La huida se vuelve brutal, a fondo entre el tráfico, con un único objetivo — despistar a las patrullas antes de llegar al punto de encuentro. Una carrera contra el reloj donde el más mínimo error de trayectoria es fatal."
 			},
 			"detailBackground": "html/img/courtier-detail-bg.png"
+		},
+		{
+			"resourceName": "darkcase_test_inexistant",
+			"label": "Darkcase",
+			"tebex_label": "mj-ia-pro.tebex.io/category/3295293",
+			"description": {
+				"fr": "Test : script pas encore sorti, avec une adresse de boutique propre.",
+				"en": "Test: upcoming script with its own store address.",
+				"es": "Prueba: script pendiente con su propia direccion de tienda."
+			}
+		},
+		{
+			"resourceName": "autre_test_inexistant",
+			"label": "Autre script",
+			"description": {
+				"fr": "Test : script pas encore sorti, sans tebex_label (adresse par defaut).",
+				"en": "Test: upcoming script without tebex_label (default address).",
+				"es": "Prueba: script pendiente sin tebex_label (direccion por defecto)."
+			}
 		}
 	]
 }
